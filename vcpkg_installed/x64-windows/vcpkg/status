@@ -57,3 +57,123 @@ Abi: e9687caf9f2f0387c633130ab3cb0dd0bc9cb4d939447ed77df855c34a91d0c4
 Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
 Status: install ok installed
 
+Package: glm
+Version: 1.0.1
+Port-Version: 3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e8811ea3c6d3c1e98455333e5c3441a1316357febe3b807535ad40ec4eceb90f
+Description: OpenGL Mathematics (GLM)
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0e25a0c70059e4116d7ba7a8bda09c1d3d90cab7e4981c6bcea1a9243cb56c59
+Description: A compression library
+Status: install ok installed
+
+Package: utfcpp
+Version: 4.0.5
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 66aeb6e8128f211815b47fdb447575ff60a8af086ebd1002f9d9a43f5be75ae8
+Description: UTF-8 with C++ in a Portable Way
+Status: install ok installed
+
+Package: stb
+Version: 2024-07-29
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: db265b47f6acffc471f2f6ac26d3f5422c956153b9e1ccf7808c54f811348c3a
+Description: public domain header-only libraries
+Status: install ok installed
+
+Package: rapidjson
+Version: 2023-07-17
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 84511229975911270eb577acec141276030572f27033f99dcf417184423d85ab
+Description: A fast JSON parser/generator for C++ with both SAX/DOM style API <http://rapidjson.org/>
+Status: install ok installed
+
+Package: pugixml
+Version: 1.14
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6f73c49bede5d7e8b03c2ae798cdaf317d2f44f32bb403d6070b0d5bb8a8fe86
+Description: Light-weight, simple and fast XML parser for C++ with XPath support
+Status: install ok installed
+
+Package: polyclipping
+Version: 6.4.2
+Port-Version: 12
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c99db35ac5f3f77a2a897671f1dd5bd4867e3e8171752c1057f5f21a0bdf27c2
+Description: The Clipper library performs clipping and offsetting for both lines and polygons. All four boolean clipping operations are supported - intersection, union, difference and exclusive-or. Polygons can be of any shape including self-intersecting polygons.
+Status: install ok installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2024-09-22
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 81708b1f984b7482a308365470456af93d2bbcce07e8b4366286285b3ac78c26
+Status: install ok installed
+
+Package: minizip
+Version: 1.3.1
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config, vcpkg-cmake-get-vars, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 70bba1ce024cf2e61b39742cde4d1f30eff6fe3be0cd0361b9e9f8a0a1baf3e4
+Description: Minizip zip file manipulation library
+Status: install ok installed
+
+Package: kubazip
+Version: 0.2.6
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d3527dfb64054dc47d1125d892ca5d62f93736530dd434f884a5d183e61fd73d
+Description: A portable, simple zip library written in C
+Status: install ok installed
+
+Package: jhasse-poly2tri
+Version: 2023-12-27
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 635a95b0cf917b27340fc24f333cc2fa79d6b8e1923d52aa811cf86bcbcc0034
+Description: Sweep-line algorithm for constrained Delaunay triangulation
+Status: install ok installed
+
+Package: draco
+Version: 1.5.7
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8f00a876de5a5cb7781e6e4649ed0e5e66f9a2bbea369996fab47f19d3b8ac6b
+Description: A library for compressing and decompressing 3D geometric meshes and point clouds. It is intended to improve the storage and transmission of 3D graphics.
+Status: install ok installed
+
+Package: assimp
+Version: 5.4.3
+Depends: draco, jhasse-poly2tri, kubazip, minizip, polyclipping, pugixml, rapidjson, stb, utfcpp, vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 01582f0ae346f2765e91d83b2672b33b8955ba877bb947727a400fc0cceda27a
+Description: The Open Asset import library
+Status: install ok installed
+
